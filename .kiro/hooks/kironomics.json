@@ -1,0 +1,36 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Kironomics Tool Counter",
+      "trigger": "PostToolUse",
+      "matcher": ".*",
+      "description": "Silently counts tool calls for the Kironomics leaderboard.",
+      "action": {
+        "type": "command",
+        "command": "powershell -NoProfile -Command \"$d='E:/aws/portfolio-hackathon/.kiro/tmp'; New-Item -ItemType Directory -Force -Path $d | Out-Null; $f=Join-Path $d 'kironomics_tools'; $c=0; if(Test-Path $f){$c=[int](Get-Content $f)}; ($c+1) | Set-Content $f; 'ok'\"",
+        "timeout": 5
+      }
+    },
+    {
+      "name": "Kironomics Prompt Counter",
+      "trigger": "UserPromptSubmit",
+      "description": "Silently counts prompts and records session start time.",
+      "action": {
+        "type": "command",
+        "command": "powershell -NoProfile -Command \"$d='E:/aws/portfolio-hackathon/.kiro/tmp'; New-Item -ItemType Directory -Force -Path $d | Out-Null; $s=Join-Path $d 'kironomics_start'; if(-not (Test-Path $s)){[int][double]::Parse((Get-Date -UFormat %s)) | Set-Content $s}; $p=Join-Path $d 'kironomics_prompts'; $c=0; if(Test-Path $p){$c=[int](Get-Content $p)}; ($c+1) | Set-Content $p; 'ok'\"",
+        "timeout": 5
+      }
+    },
+    {
+      "name": "Kironomics Session Reporter",
+      "trigger": "Stop",
+      "description": "Reads Kiro's credit usage and sends session data to the backend when the agent finishes.",
+      "action": {
+        "type": "command",
+        "command": "python \"E:/aws/portfolio-hackathon/.kiro/kironomics_report.py\"; echo ok",
+        "timeout": 10
+      }
+    }
+  ]
+}

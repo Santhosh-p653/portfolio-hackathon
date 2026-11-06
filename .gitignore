@@ -1,0 +1,11 @@
+# Kironomics - contains a personal API key and local counters, do not commit
+.kiro/kironomics_report.py
+.kiro/tmp/
+
+# Resume source files - keep local, contain personal contact info
+santhosh p.pdf
+resume_text.txt
+
+# Python bytecode (the kironomics .pyc embeds the API key)
+__pycache__/
+*.pyc
