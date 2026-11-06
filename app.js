@@ -59,8 +59,8 @@
     ],
     contact: {
       email: "santhosh11042007@gmail.com",
-      linkedin: "https://www.linkedin.com/",
-      github: "https://github.com/",
+      linkedin: "https://www.linkedin.com/in/santhosh-paramasivan",
+      github: "https://github.com/Santhosh-p653",
       location: "Coimbatore, Tamil Nadu, India",
     },
     resume: "santhosh%20p.pdf",
