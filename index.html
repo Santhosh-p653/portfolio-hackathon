@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santhosh P — Agentic AI & Cloud Engineer</title>
+  <meta name="description" content="Portfolio of Santhosh P, a CS student building explainable agentic AI, ML systems, and cloud/DevOps tooling. Explore projects, skills, and a secret supershell terminal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#about">
+        <span class="brand-prompt">~$</span> santhosh<span class="brand-caret">_</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <button type="button" class="term-hint" id="open-terminal">
+          <span aria-hidden="true">⌨</span> supershell <kbd>`</kbd>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="hero" tabindex="-1">
+      <div class="wrap hero-inner">
+        <p class="eyebrow">santhosh@portfolio:~$ whoami</p>
+        <h1>Santhosh P</h1>
+        <p class="tagline">CS student building <strong>explainable agentic AI</strong>, ML systems, and cloud / DevOps tooling.</p>
+        <p class="summary">
+          I'm a B.E. Computer Science Engineering student at Karpagam Institute of Technology (CGPA 8.72),
+          based in Coimbatore, India. I like turning research-grade ideas into containerized, observable,
+          production-shaped systems — from deepfake detection pipelines to multimodal RAG assistants.
+          Off the keyboard I lead a cloud club and grind competitive programming.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a class="btn btn-ghost" href="santhosh%20p.pdf" download>Download résumé</a>
+        </div>
+        <ul class="social" aria-label="Contact links">
+          <li><a href="mailto:santhosh11042007@gmail.com">Email</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+          <li><span class="loc">Coimbatore, Tamil Nadu, India</span></li>
+        </ul>
+        <p class="hint-note">Psst — press <kbd>`</kbd> or tap <strong>supershell</strong> to explore this site like a terminal.</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section" tabindex="-1">
+      <div class="wrap">
+        <h2 class="section-title"><span class="hash">#</span> Tech Superpowers</h2>
+        <div class="skills-grid">
+          <article class="skill-group">
+            <h3>Languages</h3>
+            <ul class="chips"><li>Python</li><li>C++</li><li>Java</li><li>SQL</li><li>Rust</li><li>R</li></ul>
+          </article>
+          <article class="skill-group">
+            <h3>AI / ML</h3>
+            <ul class="chips"><li>Hugging Face Transformers</li><li>Ollama</li><li>vLLM</li><li>MLflow</li><li>LangChain</li><li>LangGraph</li></ul>
+          </article>
+          <article class="skill-group">
+            <h3>Databases</h3>
+            <ul class="chips"><li>PostgreSQL</li><li>Qdrant</li><li>pgvector</li><li>MongoDB</li></ul>
+          </article>
+          <article class="skill-group">
+            <h3>Frameworks</h3>
+            <ul class="chips"><li>FastAPI</li><li>React</li><li>Next.js</li><li>Node.js</li></ul>
+          </article>
+          <article class="skill-group">
+            <h3>DevOps &amp; Tools</h3>
+            <ul class="chips"><li>Docker</li><li>Podman</li><li>GitHub Actions</li><li>Git</li><li>Linux</li><li>Dozzle</li><li>Beszel</li></ul>
+          </article>
+          <article class="skill-group">
+            <h3>Cloud &amp; Data</h3>
+            <ul class="chips"><li>AWS</li><li>Excel (large-scale analysis)</li><li>Matplotlib</li><li>D2</li><li>Mermaid</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-alt" tabindex="-1">
+      <div class="wrap">
+        <h2 class="section-title"><span class="hash">#</span> Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <header>
+              <h3>Deepfake-Agentic-AI</h3>
+              <p class="period">Nov 2025 – Jun 2026</p>
+            </header>
+            <p class="stack">Python · FastAPI · Docker · LangChain · LangGraph · PostgreSQL</p>
+            <ul class="bullets">
+              <li>Explainable agentic deepfake-detection pipeline (OpenCV, custom CNNs, Vision Transformers) hitting <strong>94% accuracy</strong> on a self-labeled public image test set.</li>
+              <li>LLM reasoning layer (Gemma for log parsing, LLaMA for orchestration) that produces human-readable explanations for every detection.</li>
+              <li>Containerized microservices (Docker networks, MinIO, PostgreSQL) with safety guardrails, real-time observability, and 40+ automated test suites across CI/CD.</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <header>
+              <h3>Multimodal RAG Assistant</h3>
+              <p class="period">Apr 2026 – Sept 2026</p>
+            </header>
+            <p class="stack">Python · FastAPI · LangGraph · Next.js · MCP</p>
+            <ul class="bullets">
+              <li>Multimodal RAG (SigLIP + all-MiniLM-L6-v2, adaptive chunking, hybrid search) reaching <strong>98% retrieval accuracy</strong> and 100% hit rate on recall@3/5 benchmarks.</li>
+              <li>Optimized vector search via dot-product on L2-normalized embeddings, cutting redundant ops across millions of comparisons at scale.</li>
+              <li>5-layer cache with perceptual hashing + async query pipelines; shipped as a local MCP server integrated with Claude Desktop, validated across 42 test suites.</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <header>
+              <h3>doc2site</h3>
+              <p class="period">Dec 2025 – Jan 2026</p>
+            </header>
+            <p class="stack">JavaScript · GitHub Actions · Static Site Generation</p>
+            <ul class="bullets">
+              <li>Automated static-site deployment engine turning Markdown docs into live, custom-styled sites from a single repo push — no manual hosting setup.</li>
+              <li>Powers <strong>15+ live documentation sites</strong>, fully driven by GitHub Actions with custom CSS theming.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS / CONTACT -->
+    <section id="achievements" class="section" tabindex="-1">
+      <div class="wrap">
+        <h2 class="section-title"><span class="hash">#</span> Achievements</h2>
+        <div class="ach-grid">
+          <article class="ach-card">
+            <h3>Leadership &amp; Community</h3>
+            <ul class="bullets">
+              <li><strong>CloudWeld (Cloud Club):</strong> progressed from Member to <strong>Technical Lead</strong>, driving cloud-focused technical sessions.</li>
+              <li><strong>UG Madurai:</strong> ranked <strong>#1</strong> on the college-club leaderboard for 2+ months; organized AWSBlocks (72 participants) under UG Sprint.</li>
+              <li><strong>Techtronautz (Dept. Club):</strong> co-organized 7–8 events, building leadership and public-speaking skills.</li>
+            </ul>
+          </article>
+          <article class="ach-card">
+            <h3>Competitive Programming</h3>
+            <ul class="bullets">
+              <li><strong>500+</strong> LeetCode and <strong>200+</strong> CodeChef problems solved; 25+ contests; registered for ICPC 2026–27.</li>
+              <li>Led diverse teams across <strong>50+ hackathons</strong>; ranked <strong>Top 10</strong> on the UG Builder Circle leaderboard.</li>
+            </ul>
+          </article>
+          <article class="ach-card">
+            <h3>Education</h3>
+            <ul class="bullets">
+              <li><strong>Karpagam Institute of Technology</strong> — B.E. CSE (2024–Present), CGPA <strong>8.72</strong>.</li>
+              <li><strong>Jayanthi Matriculation HSS</strong> — HSC, <strong>91%</strong> (2022–2024).</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="contact-box">
+          <h3>Let's build something</h3>
+          <p>Reach out or grab the résumé — I'm open to internships and collaborations.</p>
+          <ul class="social" aria-label="Contact links">
+            <li><a href="mailto:santhosh11042007@gmail.com">santhosh11042007@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a class="btn btn-ghost sm" href="santhosh%20p.pdf" download>Download résumé</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year"></span> Santhosh P. Built static, deployed on AWS Amplify.</p>
+      <button type="button" class="term-hint ghost" id="open-terminal-footer">
+        <span aria-hidden="true">⌨</span> launch supershell
+      </button>
+    </div>
+  </footer>
+
+  <!-- SUPERSHELL TERMINAL -->
+  <section id="supershell" class="supershell" role="dialog" aria-label="supershell interactive terminal" aria-modal="false" hidden>
+    <div class="term-window">
+      <div class="term-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="term-title">santhosh@portfolio: ~ — supershell</span>
+        <button type="button" class="term-close" id="close-terminal" aria-label="Close terminal">✕</button>
+      </div>
+      <div class="term-body">
+        <div class="term-output" id="term-output" aria-live="polite" role="log"></div>
+        <form class="term-input-line" id="term-form">
+          <label class="prompt" for="term-input" aria-hidden="true">santhosh@portfolio:~$</label>
+          <input class="term-input" id="term-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Terminal command input" />
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

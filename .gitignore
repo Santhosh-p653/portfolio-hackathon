@@ -2,10 +2,13 @@
 .kiro/kironomics_report.py
 .kiro/tmp/
 
-# Resume source files - keep local, contain personal contact info
-santhosh p.pdf
+# Local tooling used to extract the resume text (not needed by the site)
+extract_resume.py
 resume_text.txt
 
 # Python bytecode (the kironomics .pyc embeds the API key)
 __pycache__/
 *.pyc
+
+# NOTE: "santhosh p.pdf" is intentionally NOT ignored — the live site links to it
+# as the downloadable résumé, so it must be committed for the download to work.
